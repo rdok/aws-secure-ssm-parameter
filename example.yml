@@ -1,0 +1,8 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Resources:
+
+  AlgoliaApiKey:
+    Type: Custom::SSMParameterSecureString
+    Properties:
+      ServiceToken: !ImportValue CfnSecureParameter
